@@ -16,9 +16,9 @@
             android:text="Productos Disponibles"
             android:textSize="24sp"
             android:textColor="#E65100"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp" />
 
-
+        <!-- Producto Camisa -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,6 @@
             android:layout_marginBottom="12dp">
 
             <ImageView
-                android:id="@+id/imgCamisa"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/camisa"
@@ -43,7 +42,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Camisa Casual"
+                    android:text="Camisa Azul"
                     android:textSize="20sp"
                     android:textColor="#BF360C" />
 
@@ -53,7 +52,7 @@
                     android:text="$45.000"
                     android:textSize="18sp"
                     android:textColor="#D84315"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp" />
 
                 <Button
                     android:id="@+id/btnAgregarCamisa"
@@ -61,11 +60,11 @@
                     android:layout_height="wrap_content"
                     android:text="Agregar al carrito"
                     android:backgroundTint="#E65100"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Producto: Pantalón -->
+        <!-- Producto Pantalón -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,11 +74,10 @@
             android:layout_marginBottom="12dp">
 
             <ImageView
-                android:id="@+id/imgpantalon"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/pantalon"
-                android:contentDescription="pantalon" />
+                android:contentDescription="Pantalón" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -100,7 +98,7 @@
                     android:text="$90.000"
                     android:textSize="18sp"
                     android:textColor="#D84315"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp" />
 
                 <Button
                     android:id="@+id/btnAgregarpantalon"
@@ -108,10 +106,22 @@
                     android:layout_height="wrap_content"
                     android:text="Agregar al carrito"
                     android:backgroundTint="#E65100"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </LinearLayout>
 
+        <!--  BOTÓN DE GEOLOCALIZACIÓN -->
+        <Button
+            android:id="@+id/btnUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver mi ubicación"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:padding="10dp" />
+
+        <!-- Botón Carrito -->
         <Button
             android:id="@+id/btnCarrito"
             android:layout_width="match_parent"
@@ -119,8 +129,7 @@
             android:text="Ver Carrito"
             android:layout_marginTop="16dp"
             android:backgroundTint="#0D47A1"
-            android:textColor="#FFFFFF"/>
-
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </ScrollView>
 
