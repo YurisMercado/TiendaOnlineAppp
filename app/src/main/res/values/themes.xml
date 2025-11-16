@@ -1,11 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- Tema principal de tu app -->
+<resources>
     <style name="Theme.TiendaOnline" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Personaliza tus colores -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
-
 </resources>

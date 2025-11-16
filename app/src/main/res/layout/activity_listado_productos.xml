@@ -1,136 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3E0"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:background="#FFF3E0">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#E65100"
+        android:gravity="center_vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Productos Disponibles"
+            android:layout_weight="1"
+            android:text="Tienda de Ropa"
             android:textSize="24sp"
-            android:textColor="#E65100"
-            android:layout_marginBottom="20dp" />
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-        <!-- Producto Camisa -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:background="#FFE0B2"
-            android:layout_marginBottom="12dp">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/camisa"
-                android:contentDescription="Camisa" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Camisa Azul"
-                    android:textSize="20sp"
-                    android:textColor="#BF360C" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="$45.000"
-                    android:textSize="18sp"
-                    android:textColor="#D84315"
-                    android:layout_marginBottom="8dp" />
-
-                <Button
-                    android:id="@+id/btnAgregarCamisa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Agregar al carrito"
-                    android:backgroundTint="#E65100"
-                    android:textColor="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- Producto Pantalón -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:background="#FFE0B2"
-            android:layout_marginBottom="12dp">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/pantalon"
-                android:contentDescription="Pantalón" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pantalón Jeans"
-                    android:textSize="20sp"
-                    android:textColor="#BF360C" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="$90.000"
-                    android:textSize="18sp"
-                    android:textColor="#D84315"
-                    android:layout_marginBottom="8dp" />
-
-                <Button
-                    android:id="@+id/btnAgregarpantalon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Agregar al carrito"
-                    android:backgroundTint="#E65100"
-                    android:textColor="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!--  BOTÓN DE GEOLOCALIZACIÓN -->
-        <Button
-            android:id="@+id/btnUbicacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver mi ubicación"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#2196F3"
-            android:textColor="@android:color/white"
-            android:padding="10dp" />
-
-        <!-- Botón Carrito -->
         <Button
             android:id="@+id/btnCarrito"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ver Carrito"
-            android:layout_marginTop="16dp"
+            android:text="Carrito"
             android:backgroundTint="#0D47A1"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:minWidth="100dp" />
     </LinearLayout>
-</ScrollView>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productos Disponibles"
+        android:textSize="20sp"
+        android:textColor="#E65100"
+        android:padding="16dp"
+        android:textStyle="bold" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+</LinearLayout>

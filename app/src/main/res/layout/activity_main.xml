@@ -9,9 +9,10 @@
     android:padding="24dp">
 
     <TextView
-        android:text="Inicio de Sesión"
+        android:text="Tienda de Ropa Online"
         android:textSize="26sp"
         android:textColor="#0D47A1"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"/>
@@ -44,6 +45,15 @@
     <Button
         android:id="@+id/btnIrRegistro"
         android:text="Crear Cuenta"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:text="Ver Productos"
+        android:backgroundTint="#E65100"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
