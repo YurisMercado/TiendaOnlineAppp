@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.tiendaonlineapp">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+=======
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="TiendaOnlineApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -15,6 +25,22 @@
 
         <activity
             android:name=".ui.LoginActivity"
+=======
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TiendaOnline">
+
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ListadoProductosActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -23,6 +49,7 @@
         </activity>
 
         <activity
+<<<<<<< HEAD
             android:name=".ui.RegisterActivity"
             android:exported="false" />
 
@@ -48,8 +75,16 @@
 
         <activity
             android:name=".ui.CartActivity"
+=======
+            android:name=".LocationActivity"
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c
             android:exported="false" />
 
     </application>
 
+<<<<<<< HEAD
 </manifest>
+=======
+</manifest>
+
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c

@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "TiendaOnlineApp"
 include(":app")
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c

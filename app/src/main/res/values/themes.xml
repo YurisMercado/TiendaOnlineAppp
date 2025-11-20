@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Theme.TiendaOnlineApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -8,4 +9,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
+=======
+<resources>
+    <style name="Theme.TiendaOnline" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c
 </resources>

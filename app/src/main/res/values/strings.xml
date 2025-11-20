@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">TiendaOnlineApp</string>
+=======
+    <string name="app_name">Tienda de Ropa Online</string>
+>>>>>>> 2cb6c7d79cc2113dfaeb30ed1f6391e2bf9f5d8c
 </resources>
